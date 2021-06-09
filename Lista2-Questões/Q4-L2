@@ -1,0 +1,33 @@
+#include <stdio.h >        /*Bicliotecas*/
+#include <math.h>
+
+int main()                 /*Inicio do programa*/
+{
+    int N=1;                 /*Declaracao de variaveis com valor incluso*/
+    
+    while(N!=5){
+        printf("Menu: \n");               /*Pergunta e leitura*/
+        printf("1 - Gravar\n");
+        printf("2 - Carregar\n");
+        printf("3 - Apagar\n");
+        printf("4 - Inserir\n");
+        printf("5 - Fim\n");
+        printf("Digite um codigo: \n");
+        scanf("%d",&N);
+        if(N==1){                          /*Estrutura de afirmacao ou negacao*/
+            printf("Selecionado: Gravar.\n");
+        }else if(N==2){
+            printf("Selecionado: Carregar.\n");
+        }else if(N==3){
+            printf("Selecionado: Apagar.\n");
+        }else if(N==4){
+            printf("Selecionado: Inserir.\n");
+        }else if(N==5){
+            printf("Selecionado: Fim.\n");
+        }else{
+            printf("Invalido.\n");
+        }
+    }
+
+    return 0;              /*Final do programa*/
+}

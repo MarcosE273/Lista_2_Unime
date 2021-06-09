@@ -1,0 +1,35 @@
+#include <stdio.h >        /*Bicliotecas*/
+#include <math.h>
+
+int main()      /*Inicio do programa*/
+{
+    float N1,N2,n1,n2,MG1=0,MG2=0,MF=0;       /*Declaracao de variaveis*/
+    
+    printf("Unidade - G1\n");
+    printf("Digite a nota 1: \n");                   /*Visor e leituras*/
+    scanf("%f",&N1);
+    printf("Digite a nota 2: \n");
+    scanf("%f",&N2);
+    MG1=(N1+N2)/2;                         /*Calculo da media G1*/
+    if(MG1>=7){
+        printf("Aprovado em G1.\n");       /*Estrutura de afirmacao ou negacao*/
+        return 0;
+    }else if(MG1<7 && MG1>4){
+        printf("Unidade - G2 \n");
+        printf("Digite a nota 1: \n");
+        scanf("%f",&n1);
+        printf("Digite a nota 2: \n");
+        scanf("%f",&n2);
+        MG2=(n1+n2)/2;
+        MF=(MG1+MG2)/2;
+        if(MF<5){
+            printf("Reprovado.\n");
+        }else{
+            printf("Aprovado.\n");
+        }
+    }else{
+        printf("Reprovado sem unidade G2.\n");
+    }
+
+    return 0;
+}

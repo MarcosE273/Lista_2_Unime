@@ -1,0 +1,25 @@
+#include <stdio.h >        /*Bicliotecas*/
+#include <math.h>
+
+int main()                 /*Inicio do programa*/
+{
+    int I;                 /*Declaracao de variaveis*/
+    
+    printf("Digite sua idade: \n");   /*Pergunta e leitura*/
+    scanf("%d",&I);
+    if(I>=5 && I<=7){                 /*Estrutura de afirmacao ou negacao*/
+        printf("Infantil A.\n");
+    }else if(I>=8 && I<=10){
+        printf("Infantil B.\n");
+    }else if(I>=11 && I<=13){
+        printf("Juvenil A.\n");
+    }else if(I>=14 && I<=17){
+        printf("Juvenil B.\n");
+    }else if(I>=18){
+        printf("Adulto.\n");
+    }else{
+        printf("Invalido.\n");
+    }
+
+    return 0;              /*Final do programa*/
+}

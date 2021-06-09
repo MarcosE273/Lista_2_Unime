@@ -1,0 +1,42 @@
+#include <stdio.h >        /*Bicliotecas*/
+#include <math.h>
+
+int main()                 /*Inicio do programa*/
+{
+    int I;                             /*Declaracao de variaveis com valor incluso*/
+    float N1,N2,N3,MA=0,ME=0;
+    
+    printf("Identificacao do aluno: \n");       /*Perguntas e leituras*/
+    scanf("%d",&I);
+    printf("Nota 1 do aluno: \n");
+    scanf("%f",&N1);
+    printf("Nota 2 do aluno: \n");
+    scanf("%f",&N2);
+    printf("Nota 3 do aluno: \n");
+    scanf("%f",&N3);
+    ME=(N1+N2+N3)/3;                    /*Calculo da media de exercicios*/
+    MA=(N1+(N2*2)+(N3*3)+ME)/7;         /*Calculo da media de aproveitamento*/
+    printf("\n Identificacao do aluno: %d \n",I);          /*Mostra informacoes guardadas*/
+    printf("Nota 1 do aluno: %f \n",N1);
+    printf("Nota 2 do aluno: %f \n",N2);
+    printf("Nota 3 do aluno: %f \n",N3);
+    printf("Media de exercicios do aluno: %f \n",ME);
+    if(MA<4){                                              /*Estrutura de afirmacao ou negacao*/
+        printf("Conceito: E.\n");
+        printf("REPROVADO.\n");
+    }else if(MA>=4 && MA<6){
+        printf("Conceito: D.\n");
+        printf("REPROVADO.\n");
+    }else if(MA>=6 && MA<7.5){
+        printf("Conceito: C.\n");
+        printf("APROVADO.\n");
+    }else if(MA>=7.5 && MA<9){
+        printf("Conceito: B.\n");
+        printf("APROVADO.\n");
+    }else if(MA>=9){
+        printf("Conceito: A.\n");
+        printf("APROVADO.\n");
+    }
+
+    return 0;              /*Final do programa*/
+}
